@@ -1,0 +1,887 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+	<!-- mobile menu  -->
+	<div class="header-mobile-menu d-block d-lg-none">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="menu-spacing">
+						<div class="mobile-menu-area">
+							<div class="mobile-menu">
+								<nav id="mobile-menu-active">
+									<ul class="main">
+										<li class="active "><a class="main-a" href="index.html"><span>Home</span></a>		</li>
+										<li class=""><a class="main-a" href="shop.html">Shop</a></li>
+										<li class="static"><a class="main-a" href="#"><span>Elements</span></a>
+											<ul>
+												<li><a class="title-dropsown" href="#">Product Page</a></li>
+												<li><a href="#">Standard Product</a></li>
+												<li><a href="#">Variable Product</a></li>
+												<li><a href="#">External Product</a></li>
+												<li><a href="#">Group Product</a></li>
+											</ul>
+										</li>
+										<li><a class="main-a" href="blog.html"><span>Blogs</span></a>
+											<ul>
+												<li><a href="blog-grid.html">Blog Grid</a></li>
+												<li><a href="blog.html">Blog Right Sidebar</a></li>
+												<li><a href="blog-list.html">Blog List</a></li>
+												<li><a href="blog-full-wide.html">Blog Full Width</a></li>
+												<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+											</ul>
+										</li>
+										<li><a class="main-a" href="portfolio.html"><span>Portfolio</span></a>
+											<ul>
+												<li><a href="portfolio.html">Single Item </a></li>
+												<li><a href="portfolio-2.html">Two Columns</a></li>
+												<li><a href="portfolio-3.html">Three Columns</a></li>
+												<li><a href="portfolio-4.html">Four Columns</a></li>
+											</ul>
+										</li>
+										<li><a class="main-a" href="contact.html">Contact</a></li>
+										<li><a class="main-a" href="about.html">About Us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Mobile menu end  -->
+	<!-- header area end-->
+	<!-- slider area -->
+	<div class="slider-area slider-6">
+		<div class="slider-container theme-default">
+			<!-- Slider Image -->
+			<div id="mainSlider6" class="nivoSlider slider-image">
+				<img src="{% static 'img/slider/slide-3.jpg' %}" alt="main slider" title="#htmlcaption3" />
+			</div>
+			<!-- Slider Caption 1 -->
+			<!-- Slider Caption 2 -->
+			<div id="htmlcaption3" class="nivo-html-caption slider-caption-3">
+				<div class="slider-progress"></div>
+				<div class="slide3-text wow zoomIn " data-wow-duration="0.1s" data-wow-delay="0.3s">
+					<div class="middle-text ">
+						<div class="cap-dec " data-wow-duration="0.9s" data-wow-delay="0.5s">
+							<div class="first-f">
+								<h2 class="first">HOT & TRENDY CLOTHES </h2>
+							</div>
+						</div>
+						<div class="cap-title " data-wow-duration="1.2s" data-wow-delay="0.2s">
+							<div class="first-f">
+								<h1 class="decond">FOR REAL MEN </h1>
+							</div>
+						</div>
+						<div class="cap-readmore " data-wow-duration="1.4s" data-wow-delay=".7s">
+							<div class="first-f">
+								<p class="save">SAVE UP T O 40% OFF</p>
+							</div>
+						</div>
+						<div class="sl-shop-link " data-wow-duration="1.9s" data-wow-delay="1s">
+							<div class="slide-lixury-btn">
+								<a class="s" href="#">shop now</a>
+							</div>
+							<div class="slide-lixury-btn">
+								<a class="s" href="#">PROMOTION</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slider area end -->
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="search-catagory">
+						<form>
+							<div class="select-style">
+								<select class="select-optn ">
+									<option class="first-option">all catagory </option>
+									<option> catagory 1</option>
+									<option> catagory 2</option>
+									<option> catagory 3</option>
+									<option> catagory 4 ff</option>
+								</select>
+							</div>
+							<input class="input-text-box" spellcheck="false" value="" placeholder="Search product...">
+							<button class="btn search-button"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- search area  end-->
+	<!-- product filter area -->
+	<div class="trendy-area pad-70">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading-title">
+						<h4>The trendy clothing</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="filter-mnu">
+						<div class="filter" data-filter="all">all</div>
+						<div class="filter" data-filter=".Nightwear">Nightwear</div>
+						<div class="filter" data-filter=".Dress">Dress</div>
+						<div class="filter" data-filter=".Jewellery">Jewellery</div>
+					</div>
+				</div>
+				<div id="Container" class="filter-grid">
+					<div class="mix Nightwear">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/1.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix Dress Jewellery">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/3.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix Nightwear Jewellery">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/4.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/1.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix Nightwear Jewellery Dress">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/5.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix  Nightwear">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/1.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix Dress Jewellery">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/3.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix Nightwear Jewellery">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/4.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/1.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix Nightwear Jewellery Dress">
+						<div class="filter-item">
+							<div class="single-product">
+								<div class="product-image fix">
+									<a href="product-details.html">
+										<img src="{% static 'img/product/5.jpg' %}" alt="">
+										<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+									</a>
+									<div class="product-action">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#myModal"
+											title="Quick view"><i class="fa fa-eye"></i></a>
+										<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+												class="fa fa-heart"></i></a>
+										<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+												class="fa fa-retweet"></i></a>
+									</div>
+									<div class="new-area sell-area">
+										<div class="new">
+											<span class="text-new"><span>sell</span></span>
+										</div>
+									</div>
+									<div class="color">
+										<ul class="color-list">
+											<li class="bk"><span>bk</span></li>
+											<li class="rd"><span>rd</span></li>
+											<li class="yl"><span>yl</span></li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="more-option">
+					<span class="border-icon">
+						<span class="border-icon-bg">
+							<span class="plus-icon">+</span>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- product filter area -->
+	<!-- slider area -->
+	<div class="wplane-area wplane-page-6">
+		<div class="container">
+			<div class="wplane-bg">
+				<div class="lane-slide-banar ">
+					<div class="slider-banner row">
+						<div class="col-md-8">
+							<div class="slider-5">
+								<div class="slider-area">
+									<div class="slider-container theme-default">
+										<!-- Slider Image -->
+										<div id="mainSlider" class="nivoSlider slider-image">
+											<img src="{% static 'img/slider/slide-mini-1.jpg' %}" alt="main slider"
+												title="#htmlcaption1" />
+											<img src="{% static 'img/slider/slide-mini-2.jpg' %}" alt="main slider"
+												title="#htmlcaption2" />
+											<img src="{% static 'img/slider/slide-mini-3.jpg' %}" alt="main slider"
+												title="#htmlcaption3" />
+										</div>
+										<!-- Slider Caption 1 -->
+										<div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
+											<div class="slider-progress"></div>
+											<div class="slide1-text ">
+												<div class="middle-text ">
+													<div class="cap-dec ">
+														<div class="first-f">
+															<h3 class="first">HOT & TRENDY CLOTHES </h3>
+														</div>
+													</div>
+													<div class="cap-title ">
+														<div class="first-f">
+															<h3 class="decond">FOR REAL WOMEN</h3>
+														</div>
+													</div>
+													<div class="sl-shop-link ">
+														<div class="slide-lixury-btn">
+															<a class="s" href="#">shop now</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Slider Caption 2 -->
+										<div id="htmlcaption2" class="nivo-html-caption slider-caption-2">
+											<div class="slider-progress"></div>
+											<div class="slide2-text ">
+												<div class="middle-text ">
+													<div class="cap-dec ">
+														<div class="first-f">
+															<h3 class="first">HOT & TRENDY CLOTHES </h3>
+														</div>
+													</div>
+													<div class="cap-title ">
+														<div class="first-f">
+															<h3 class="decond">FOR REAL WOMEN</h3>
+														</div>
+													</div>
+													<div class="sl-shop-link ">
+														<div class="slide-lixury-btn">
+															<a class="s" href="#">shop now</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Slider Caption 2 -->
+										<div id="htmlcaption3" class="nivo-html-caption slider-caption-3">
+											<div class="slider-progress"></div>
+											<div class="slide3-text wow zoomIn " data-wow-duration="0.1s"
+												data-wow-delay="0.3s">
+												<div class="middle-text ">
+													<div class="cap-dec ">
+														<div class="first-f">
+															<h3 class="first">HOT & TRENDY CLOTHES </h3>
+														</div>
+													</div>
+													<div class="cap-title ">
+														<div class="first-f">
+															<h3 class="decond">FOR REAL MEN</h3>
+														</div>
+													</div>
+													<div class="sl-shop-link ">
+														<div class="slide-lixury-btn">
+															<a class="s" href="#">shop now</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="lane-banner">
+								<a href="#"><img src="{% static 'img/banner/fashion-shoes.jpg' %}" alt="" /></a>
+							</div>
+							<div class="lane-banner">
+								<a href="#"><img src="{% static 'img/banner/fashion-bags.jpg' %}" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slider area end -->
+	<!-- product area  -->
+	<div class="product-list-area  ptb-70 ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="product-list">
+						<h3>Best Selling</h3>
+						<div class="single-product-list">
+							<div class="product-image">
+								<a href="product-details.html">
+									<img class="primary-1" src="{% static 'img/product/1.jpg' %}" alt="">
+									<img class="primary-2" src="{% static 'img/product/2.jpg' %}" alt="">
+								</a>
+							</div>
+							<div class="product-desc">
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#" data-bs-toggle="tooltip" title="Add to cart"><i
+											class="fa fa-shopping-cart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+											class="fa fa-heart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+											class="fa fa-retweet"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="single-product-list">
+							<div class="product-image">
+								<a href="product-details.html">
+									<img class="primary-1" src="{% static 'img/product/3.jpg' %}" alt="">
+									<img class="primary-2" src="{% static 'img/product/4.jpg' %}" alt="">
+								</a>
+							</div>
+							<div class="product-desc">
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#" data-bs-toggle="tooltip" title="Add to cart"><i
+											class="fa fa-shopping-cart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+											class="fa fa-heart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+											class="fa fa-retweet"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="pro-more-option">
+							<a href="#">View more <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="product-list ">
+						<h3>On Sale</h3>
+						<div class="single-product-list">
+							<div class="product-image">
+								<a href="product-details.html">
+									<img class="primary-1" src="{% static 'img/product/5.jpg' %}" alt="">
+									<img class="primary-2" src="{% static 'img/product/6.jpg' %}" alt="">
+								</a>
+							</div>
+							<div class="product-desc">
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#" data-bs-toggle="tooltip" title="Add to cart"><i
+											class="fa fa-shopping-cart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+											class="fa fa-heart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+											class="fa fa-retweet"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="single-product-list">
+							<div class="product-image">
+								<a href="product-details.html">
+									<img class="primary-1" src="{% static 'img/product/7.jpg' %}" alt="">
+									<img class="primary-2" src="{% static 'img/product/1.jpg' %}" alt="">
+								</a>
+							</div>
+							<div class="product-desc">
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#" data-bs-toggle="tooltip" title="Add to cart"><i
+											class="fa fa-shopping-cart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+											class="fa fa-heart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+											class="fa fa-retweet"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="pro-more-option">
+							<a href="#">View more <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 pt-4 pt-lg-0">
+					<div class="product-list last">
+						<h3>Special</h3>
+						<div class="single-product-list">
+							<div class="product-image">
+								<a href="product-details.html">
+									<img class="primary-1" src="{% static 'img/product/6.jpg' %}" alt="">
+									<img class="primary-2" src="{% static 'img/product/5.jpg' %}" alt="">
+								</a>
+							</div>
+							<div class="product-desc">
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#" data-bs-toggle="tooltip" title="Add to cart"><i
+											class="fa fa-shopping-cart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+											class="fa fa-heart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+											class="fa fa-retweet"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="single-product-list">
+							<div class="product-image">
+								<a href="product-details.html">
+									<img class="primary-1" src="{% static 'img/product/2.jpg' %}" alt="">
+									<img class="primary-2" src="{% static 'img/product/1.jpg' %}" alt="">
+								</a>
+							</div>
+							<div class="product-desc">
+								<h4 class="name"><a href="#">Ullamco laboris nisi</a></h4>
+								<span class="amount">
+									<del><span class="amount-del">$170.00</span></del>
+									$185.00
+								</span>
+								<div class="add-to-cart">
+									<a href="#" data-bs-toggle="tooltip" title="Add to cart"><i
+											class="fa fa-shopping-cart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" title="Wishlist"><i
+											class="fa fa-heart"></i></a>
+									<a href="#" data-bs-toggle="tooltip" data-placement="top" title="Compare"><i
+											class="fa fa-retweet"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="pro-more-option">
+							<a href="#">View more <i class="vc_btn3-icon fa fa-long-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- product area end -->
+	<!-- Blog area start -->
+	<div class="blog-area ptb-70">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading-title">
+						<h4>Latest From Blogs</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-12"> -->
+				<div class="carousel ind-style ">
+					<div class="slide-item">
+						<div class="single-blog-post slide-post">
+							<div class="post-thumb">
+								<img src="{% static 'img/blog/1.jpg' %}" alt="">
+							</div>
+							<div class="post-area">
+								<div class="post-meta">
+									<span>
+										<a href="#"><i class="fa fa-calendar"></i> Oct,25</a>
+									</span>
+									<span>
+										<i class="fa fa-user" aria-hidden="true"></i>
+										By
+										<a href="#">admin</a>
+									</span>
+									<span>
+										<i class="fa fa-comment"></i>
+										<a href="#">2 comments</a>
+									</span>
+								</div>
+								<div class="post-content">
+									<h3><a href="#">Tempor incididunt ut labore et dolore magna aliqua </a></h3>
+									<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new
+										fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
+								</div>
+								<a class="lixury-btn" href="#"> shop now </a>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="single-blog-post slide-post">
+							<div class="post-thumb">
+								<img src="{% static 'img/blog/2.jpg' %}" alt="">
+							</div>
+							<div class="post-area">
+								<div class="post-meta">
+									<span>
+										<a href="#"><i class="fa fa-calendar"></i> Oct,25</a>
+									</span>
+									<span>
+										<i class="fa fa-user" aria-hidden="true"></i>
+										By
+										<a href="#">admin</a></span>
+									<span>
+										<i class="fa fa-comment"></i>
+										<a href="#">2 comments</a>
+									</span>
+								</div>
+								<div class="post-content">
+									<h3><a href="#">Tempor incididunt ut labore et dolore magna aliqua </a></h3>
+									<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new
+										fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
+								</div>
+								<a class="lixury-btn" href="#"> shop now </a>
+							</div>
+						</div>
+					</div>
+					<div class="slide-item">
+						<div class="single-blog-post slide-post">
+							<div class="post-thumb">
+								<img src="{% static 'img/blog/1.jpg' %}" alt="">
+							</div>
+							<div class="post-area">
+								<div class="post-meta">
+									<span>
+										<a href="#"><i class="fa fa-calendar"></i> Oct,25</a>
+									</span>
+									<span>
+										<i class="fa fa-user" aria-hidden="true"></i>
+										By
+										<a href="#">admin</a></span>
+									<span>
+										<i class="fa fa-comment"></i>
+										<a href="#">2 comments</a>
+									</span>
+								</div>
+								<div class="post-content">
+									<h3><a href="#">Tempor incididunt ut labore et dolore magna aliqua </a></h3>
+									<p>Lorem ipsum dolor sit amete, consectetur news adipisicing sed do new
+										fashion eiusmod tempor incididunt ut labore etel dolore magna aliqua.</p>
+								</div>
+								<a class="lixury-btn" href="#"> shop now </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+	<!-- Blog area end -->
+	<!-- Brand  area  -->
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="br-carousel  ptb-70 ind-style">
+						<div class="brand-logo">
+							<img src="{% static 'img/brand/brand1.png' %}" alt="">
+						</div>
+						<div class="brand-logo">
+							<img src="{% static 'img/brand/brand1.png' %}" alt="">
+						</div>
+						<div class="brand-logo">
+							<img src="{% static 'img/brand/brand1.png' %}" alt="">
+						</div>
+						<div class="brand-logo">
+							<img src="{% static 'img/brand/brand1.png' %}" alt="">
+						</div>
+						<div class="brand-logo">
+							<img src="{% static 'img/brand/brand1.png' %}" alt="">
+						</div>
+						<div class="brand-logo">
+							<img src="{% static 'img/brand/brand1.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Brand  area end -->
+{% endblock%}
